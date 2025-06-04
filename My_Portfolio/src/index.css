@@ -1,0 +1,48 @@
+/* Import Tailwind and Font Awesome */
+@import "tailwindcss";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+/* Global transition */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* CSS Property for shimmer effect */
+@property --shimmer-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  to {
+    --shimmer-angle: 360deg;
+  }
+}
+
+/* Border flow animation */
+@keyframes border-flow {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+/* Floating animation */
+ @keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-10px) translateX(10px); }
+  50% { transform: translateY(0) translateX(20px); }
+  75% { transform: translateY(10px) translateX(10px); }
+}
+
+/* Text gradient effect */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+} 
