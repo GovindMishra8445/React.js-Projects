@@ -1,12 +1,80 @@
-# React + Vite
+# Govind Mishra | Web Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi, I’m Govind Mishra — a MERN Stack Developer who loves creating fast, responsive web apps with React, Node.js, Express, and MongoDB. Always eager to learn and improve, I focus on building smooth and engaging user experiences.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack & Tools
 
-## Expanding the ESLint configuration
+- React.js  
+- JavaScript (ES6+)  
+- Tailwind CSS  
+- Framer Motion (for animations)  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Key Features
+
+- Fully Responsive Design (Mobile & Desktop)  
+- Multiple Projects Showcase  
+- Contact Form for easy communication  
+- Detailed About Me Section  
+- Smooth animations and transitions  
+
+---
+
+## 🌐 Live Demo
+
+Check out the live version of my portfolio here:  
+[https://govind-mishra-portfolio.vercel.app/](https://govind-mishra-portfolio.vercel.app/)
+
+---
+
+## 📸 Screenshot
+
+![Portfolio Screenshot](./screenshot.png)  
+
+---
+
+## 💻 How to Run Locally
+
+1. Clone the repository  
+```bash
+git clone https://github.com/your-username/portfolio.git
+
+
+Navigate to the project directory
+
+cd portfolio
+Install dependencies
+
+npm install
+Run the development server
+
+npm run dev
+Open http://localhost:3000 in your browser
+
+📝 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+👨‍💻 About Me
+I’m passionate about building modern web applications that are user-friendly and performant. I continuously explore new technologies and improve my skills to deliver the best possible experiences. Besides coding, I enjoy learning about UI/UX design and animations.
+
+📬 Contact
+Feel free to reach out via:
+
+Email: govindranjan8445@gmail.com
+
+LinkedIn: linkedin.com/in/govindmishra-bca
+
+Twitter: @govindmishra8445
+
+🔮 Future Improvements In this Portfolio Website
+
+Add Dark Mode
+
+Implement a Chatbot feature
+
+Make Projects dynamically fetchable
+
+Enhance animations and transitions
