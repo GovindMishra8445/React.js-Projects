@@ -1,7 +1,6 @@
 /* Import Tailwind and Font Awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 @import "tailwindcss";
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-
 
 /* Global transition */
 html {
@@ -33,11 +32,20 @@ html {
 }
 
 /* Floating animation */
- @keyframes float {
-  0%, 100% { transform: translateY(0) translateX(0); }
-  25% { transform: translateY(-10px) translateX(10px); }
-  50% { transform: translateY(0) translateX(20px); }
-  75% { transform: translateY(10px) translateX(10px); }
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-10px) translateX(10px);
+  }
+  50% {
+    transform: translateY(0) translateX(20px);
+  }
+  75% {
+    transform: translateY(10px) translateX(10px);
+  }
 }
 
 /* Text gradient effect */
@@ -45,4 +53,4 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-} 
+}
