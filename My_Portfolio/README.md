@@ -32,7 +32,13 @@ Check out the live version of my portfolio here:
 
 ## 📸 Screenshot
 
-![Portfolio Screenshot](./screenshot.png)  
+![Portfolio Screenshot](./src/assets/Screenshot/HeroScreenshot.png)  
+![Portfolio Screenshot](./src/assets/Screenshot/AboutScreenshot.png)  
+![Portfolio Screenshot](./src/assets/Screenshot/SkillScreenshot.png)  
+![Portfolio Screenshot](./src/assets/Screenshot/ProjectScreenshot.png)  
+![Portfolio Screenshot](./src/assets/Screenshot/ExperienceScreenshot.png)  
+![Portfolio Screenshot](./src/assets/Screenshot/ContactScreenshot.png)  
+![Portfolio Screenshot](./src/assets/Screenshot/FotterScreenshot.png)  
 
 ---
 
