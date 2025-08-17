@@ -1,7 +1,7 @@
-// // src/firebase.js
 // import { initializeApp } from "firebase/app";
+// import { getAuth } from "firebase/auth";
 // import { getFirestore } from "firebase/firestore";
-// import { getAnalytics } from "firebase/analytics";
+// import { getStorage } from "firebase/storage";
 
 // const firebaseConfig = {
 //   apiKey: "AIzaSyAIp6_zL59i5OGvIP-mAbmlNKs9Qr-O-wA",
@@ -13,18 +13,15 @@
 //   measurementId: "G-Z9GFE1T4V3"
 // };
 
-// // Init Firebase
 // const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
 
-// // Init Firestore
-// export const db = getFirestore(app);
-
-
+// export const auth = getAuth(app);        // ✅ Fix 1
+// export const db = getFirestore(app);     // ✅ Fix 2
+// export const storage = getStorage(app);  // ✅ Fix 3
 
 
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth, setPersistence, browserSessionPersistence } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
@@ -39,9 +36,10 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
-export const auth = getAuth(app);        // ✅ Fix 1
+setPersistence(auth, browserSessionPersistence)
+  .catch((error) => console.error("Persistence error:", error));
 export const db = getFirestore(app);     // ✅ Fix 2
 export const storage = getStorage(app);  // ✅ Fix 3
-
-
+export { auth};

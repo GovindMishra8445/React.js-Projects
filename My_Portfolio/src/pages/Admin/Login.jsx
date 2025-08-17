@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
+import { ArrowLeft } from "lucide-react";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -36,7 +37,15 @@ export default function Login() {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 dark:bg-gray-900">
+     
       <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 w-full max-w-sm">
+      <Link 
+          to="/" 
+          className="inline-flex items-center space-x-2 text-blue-600 dark:text-blue-400 font-medium cursor-pointer"
+        >
+          <ArrowLeft size={18} />
+          <span>Home</span>
+        </Link>
         <h2 className="text-2xl font-bold text-center mb-4 text-gray-900 dark:text-white">
           Admin Login
         </h2>

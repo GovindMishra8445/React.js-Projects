@@ -105,6 +105,7 @@ import AppFullStackProjects from "./pages/Admin/AppFullStackProjects";
 // Firebase
 import { db } from "./firebase"; // Adjust path as per your project
 import { collection, onSnapshot } from "firebase/firestore";
+import ComingSoon from "./components/ComingSoon";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -168,6 +169,7 @@ export default function App() {
             <Route path="projects/app-fullstack" element={<AppFullStackProjects />} />
 
             {/* Other Admin Pages */}
+            <Route path="admin/coming-soon" element={<ComingSoon/>} />
             <Route path="skills" element={<SkillsAdmin />} />
             <Route path="experience" element={<ExperienceAdmin />} />
           </Route>

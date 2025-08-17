@@ -290,8 +290,8 @@
 
 
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
-import { Menu, Search, Bell, Settings, User, LogOut } from "lucide-react"; // Replaced Fi icons
+import { Link, useLocation } from "react-router-dom";
+import { Menu, Search, Bell, Settings, User, LogOut, SkipBack  } from "lucide-react"; // Replaced Fi icons
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase";
 import { signOut } from "firebase/auth";
@@ -384,12 +384,6 @@ export default function AdminHeader({ setSidebarOpen }) {
             </span>
           </button>
         </div>
-
-        {/* Settings */}
-        <button className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">
-          <Settings size={18} className="text-gray-600 dark:text-gray-300" />
-        </button>
-
         {/* Profile Menu */}
         <div className="relative">
           <button 
@@ -418,7 +412,7 @@ export default function AdminHeader({ setSidebarOpen }) {
                 className="fixed inset-0 z-10" 
                 onClick={() => setShowProfileMenu(false)}
               />
-              <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-20 py-1">
+              <div className="absolute right-0 mt-2 w-48 cursor-pointer bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-20 py-1">
                 <div className="px-4 py-2 border-b border-gray-100 dark:border-gray-700">
                   <div className="text-sm font-medium text-gray-700 dark:text-gray-200">
                     {user?.displayName || 'Admin User'}
@@ -428,12 +422,18 @@ export default function AdminHeader({ setSidebarOpen }) {
                   </div>
                 </div>
                 
-                <button className="w-full flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700">
+               <Link to={'/'}>
+                 <button className="w-full cursor-pointer flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700">
+                  <SkipBack  size={16} />
+                  Back Portfolio
+                </button>
+               </Link>
+                <button className="w-full cursor-pointer flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700">
                   <User size={16} />
                   Profile
                 </button>
                 
-                <button className="w-full flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700">
+                <button className="w-full cursor-pointer flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700">
                   <Settings size={16} />
                   Settings
                 </button>

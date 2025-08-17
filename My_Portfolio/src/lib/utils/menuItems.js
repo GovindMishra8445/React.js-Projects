@@ -6,7 +6,7 @@ import {
   Smartphone, 
   Database, 
   Layers, 
-  Wrench, // Replaced Tool with Wrench (Tool is not a valid lucide icon)
+  Wrench, 
   Briefcase, 
   BarChart2, 
   Mail 
@@ -34,23 +34,23 @@ export const menuItems = [
   },
   {
     name: "Skills",
-    to: "/admin/skills",
-    icon: Wrench, // Replaced Tool with Wrench
+    to: "admin/coming-soon",
+    icon: Wrench, 
   },
   {
     name: "Experience",
-    to: "/admin/experience",
+    to: "admin/coming-soon",
     icon: Briefcase,
   },
   {
     name: "Analytics",
-    to: "/admin/analytics",
+    to: "admin/coming-soon",
     icon: BarChart2,
     badge: "New",
   },
   {
     name: "Messages",
-    to: "/admin/messages",
+    to: "admin/coming-soon",
     icon: Mail,
     badge: "5",
   },

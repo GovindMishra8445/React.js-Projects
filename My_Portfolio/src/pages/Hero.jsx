@@ -18,17 +18,6 @@ I thrive in fast-paced, dynamic environments where I continuously push the bound
 Whether I'm developing interactive user interfaces or crafting robust back-end systems, my goal is to create digital experiences that are not only visually appealing but also scalable and efficient. 
 I am committed to leveraging my skills to make a lasting impact and drive meaningful change in every project I undertake.`;
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoaded(true);
-    }, 500);
-
-    return () => {
-      typed.destroy();
-      clearTimeout(timer);
-    };
-  }, []);
-
   return (
     <section
       id="hero"

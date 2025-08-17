@@ -111,7 +111,7 @@ export default function Sidebar({
         </nav>
 
         {/* Footer - Fixed at Bottom */}
-        <div className="sticky bottom-0 z-10 flex-shrink-0 px-6 py-4 border-t border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50">
+        {/* <div className="sticky bottom-0 z-10 flex-shrink-0 px-6 py-4 border-t border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
               <span className="text-white font-medium text-sm">GM</span>
@@ -140,7 +140,7 @@ export default function Sidebar({
           >
             © {new Date().getFullYear()} My Portfolio. All rights reserved.
           </div>
-        </div>
+        </div> */}
       </aside>
     </>
   );
