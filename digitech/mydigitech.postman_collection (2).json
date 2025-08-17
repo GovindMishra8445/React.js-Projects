@@ -1,0 +1,1362 @@
+{
+	"info": {
+		"_postman_id": "566fd35c-c597-40fd-9bcf-9c12edabcb17",
+		"name": "mydigitech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27049966",
+		"_collection_link": "https://lively-moon-135670.postman.co/workspace/Team-Workspace~e8df30ad-c9ab-4632-890d-df65ecc9d33b/collection/27049966-566fd35c-c597-40fd-9bcf-9c12edabcb17?action=share&source=collection_link&creator=27049966"
+	},
+	"item": [
+		{
+			"name": "vender",
+			"item": [
+				{
+					"name": "http://localhost:8800/api/v1/vendor/createVender",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgzMjNjZjUwOTVkMDU2MzdiMDM2NmEiLCJpYXQiOjE3NTM0MjgxMDksImV4cCI6MTc1MzUxNDUwOX0.t37E35Fw8xFskcp6R7QnR4DFNIz6aU0KH8djdFVzOy4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"satyam\",\r\n    \"lastName\":\"rai\",\r\n    \"email\":\"satyamrai382@gmail.com\",\r\n    \"password\":\"12345\",\r\n    \"mobileNumber\":\"9580683951\",\r\n    \"addressLine\":\"Noida\",\r\n    \"city\":\"Noida\",\r\n    \"state\":\"Noida\",\r\n    \"zipCode\":\"276202\",\r\n    \"dateOfBirth\":\"28/06/2002\",\r\n    \"countryCode\":\"+91\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/vendor/createVender",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"vendor",
+								"createVender"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VenderLogin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgzMjNjZjUwOTVkMDU2MzdiMDM2NmEiLCJpYXQiOjE3NTM0NjQ3MTAsImV4cCI6MTc1MzU1MTExMH0.DgtcbLGkWctZckH_EUdj0XIRH8VGpPl_d0kObAG7ed0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"satyamrai382@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/vendor/VenderLogin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"vendor",
+								"VenderLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "venderDashboard",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2M2U1NTMyN2U3OGEyYzZkODVhNjciLCJpYXQiOjE3NTM3NjcxNTgsImV4cCI6MTc1Mzg1MzU1OH0.twREQFhPCNnMMj9xL0-kpYv-39m_tI56EPr0cz6IzQg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"688647c7327e78a2c6d85a7f\",\r\n     \"products\": [\r\n    {\r\n      \"productId\": \"68871fbc02aee4520af67111\",\r\n      \"quantity\": 2,\r\n      \"TotalMRP\": 1500,\r\n      \"finalPrice\": 1000\r\n    }\r\n   \r\n  ],\r\n\r\n  \"paymentMethod\":\"CASH_ON_DELIVERY\",\r\n   \"shippingAddress\": {\r\n      \"addressLine1\": \"123 Main Street\",\r\n      \"city\": \"Azamgarh\",\r\n      \"state\": \"Uttar Pradesh\",\r\n      \"zipCode\": \"276001\",\r\n      \"country\": \"India\"\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/vendor/venderDashboard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"vendor",
+								"venderDashboard"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "adminLogin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgxZGRkNmY1ZjUwM2FhYzU2ZTc0YzEiLCJpYXQiOjE3NTMzNjEyNDIsImV4cCI6MTc1MzM2NDg0Mn0.jcqWEiU5Z1wVZwZlfqoao65sWveCHqyYx-tQ_02nbdg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/admin/adminLogin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"adminLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "adminDashboard",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2MzdjOTY4ZTdjYTM4YjgxYTdiOTYiLCJpYXQiOjE3NTM3Njk2NzAsImV4cCI6MTc1Mzg1NjA3MH0.3_NyjZRYpYT9OeXR_UBa5AfmfQDn8sVZHREubofNFkg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"688647c7327e78a2c6d85a7f\",\r\n     \"products\": [\r\n    {\r\n      \"productId\": \"68871fbc02aee4520af67111\",\r\n      \"quantity\": 2,\r\n      \"TotalMRP\": 1500,\r\n      \"finalPrice\": 1000\r\n    }\r\n   \r\n  ],\r\n\r\n  \"paymentMethod\":\"CASH_ON_DELIVERY\",\r\n   \"shippingAddress\": {\r\n      \"addressLine1\": \"123 Main Street\",\r\n      \"city\": \"Azamgarh\",\r\n      \"state\": \"Uttar Pradesh\",\r\n      \"zipCode\": \"276001\",\r\n      \"country\": \"India\"\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/admin/adminDashboard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"adminDashboard"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "businessCategory",
+			"item": [
+				{
+					"name": "createBusinessCategory",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2MzdjOTY4ZTdjYTM4YjgxYTdiOTYiLCJpYXQiOjE3NTM2MjczNjgsImV4cCI6MTc1MzcxMzc2OH0.Ak6krywd3rW5q5TBth3Nql8iZzPB82tPFNrT27dp9_k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"businessCategoryName\":\"Electronics\",\r\n    \"description\":\"very good\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/businessCategory/createBusinessCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"businessCategory",
+								"createBusinessCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCategory?page=1&limit=1&businessCategoryName=Electronics",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgzMjNjZjUwOTVkMDU2MzdiMDM2NmEiLCJpYXQiOjE3NTM0NjQ3MTAsImV4cCI6MTc1MzU1MTExMH0.DgtcbLGkWctZckH_EUdj0XIRH8VGpPl_d0kObAG7ed0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"venderCategoryName\":\"Books\",\r\n    \"description\":\"very good\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/businessCategory/getAllCategory?page=1&limit=1&businessCategoryName=Electronics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"businessCategory",
+								"getAllCategory"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								},
+								{
+									"key": "businessCategoryName",
+									"value": "Electronics"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "userLogin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgzMjNjZjUwOTVkMDU2MzdiMDM2NmEiLCJpYXQiOjE3NTM0NjQ3MTAsImV4cCI6MTc1MzU1MTExMH0.DgtcbLGkWctZckH_EUdj0XIRH8VGpPl_d0kObAG7ed0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"email\":\"satyamrai382@gmail.com\",\r\n    \"password\":\"12345\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/user/userLogin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"userLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotPassword",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgzMjNjZjUwOTVkMDU2MzdiMDM2NmEiLCJpYXQiOjE3NTM0NjQ3MTAsImV4cCI6MTc1MzU1MTExMH0.DgtcbLGkWctZckH_EUdj0XIRH8VGpPl_d0kObAG7ed0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"email\":\"satyamrai382@gmail.com\"\r\n    \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/user/forgotPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"forgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "otpVerification",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgzMjNjZjUwOTVkMDU2MzdiMDM2NmEiLCJpYXQiOjE3NTM0NjQ3MTAsImV4cCI6MTc1MzU1MTExMH0.DgtcbLGkWctZckH_EUdj0XIRH8VGpPl_d0kObAG7ed0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n\"email\":\"satyamrai382@gmail.com\",\r\n\"otp\":\"91662\"\r\n    \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/user/otpVerification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"otpVerification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile?page=1&limit=2&email=satyamrai382@gmail.com",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg0NzRiZTRiMzBmOTBjYjM3MmE1NzEiLCJpYXQiOjE3NTM1MTM1NzAsImV4cCI6MTc1MzU5OTk3MH0.M-vL_OhbXiO-2Lo0JyWV3qzZQMKdOUylZISwK55XUH8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/user/getProfile?page=1&limit=2&email=satyamrai382@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getProfile"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "email",
+									"value": "satyamrai382@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile?page=1&limit=2&mobileNumber=1477802216",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg0NzRiZTRiMzBmOTBjYjM3MmE1NzEiLCJpYXQiOjE3NTM1MTM1NzAsImV4cCI6MTc1MzU5OTk3MH0.M-vL_OhbXiO-2Lo0JyWV3qzZQMKdOUylZISwK55XUH8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/user/getProfile?page=1&limit=2&mobileNumber=1477802216",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getProfile"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "mobileNumber",
+									"value": "1477802216"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile?page=1&limit=2&city=noida",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg0NzRiZTRiMzBmOTBjYjM3MmE1NzEiLCJpYXQiOjE3NTM1MTM1NzAsImV4cCI6MTc1MzU5OTk3MH0.M-vL_OhbXiO-2Lo0JyWV3qzZQMKdOUylZISwK55XUH8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/user/getProfile?page=1&limit=2&city=noida",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getProfile"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "city",
+									"value": "noida"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile?page=1&limit=2&state=up",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg0NzRiZTRiMzBmOTBjYjM3MmE1NzEiLCJpYXQiOjE3NTM1MTM1NzAsImV4cCI6MTc1MzU5OTk3MH0.M-vL_OhbXiO-2Lo0JyWV3qzZQMKdOUylZISwK55XUH8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/user/getProfile?page=1&limit=2&state=up",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getProfile"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "state",
+									"value": "up"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userCreate",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgzMjNjZjUwOTVkMDU2MzdiMDM2NmEiLCJpYXQiOjE3NTM0NjQ3MTAsImV4cCI6MTc1MzU1MTExMH0.DgtcbLGkWctZckH_EUdj0XIRH8VGpPl_d0kObAG7ed0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Abhijeet\",\r\n    \"lastName\":\"rai\",\r\n    \"email\":\"satyamrai312@gmail.com\",\r\n    \"password\":\"12345\",\r\n    \"mobileNumber\":\"7580683921\",\r\n    \"addressLine\":\"Noida\",\r\n    \"city\":\"Noida\",\r\n    \"state\":\"up\",\r\n    \"zipCode\":\"276202\",\r\n    \"dateOfBirth\":\"11/11/2001\",\r\n    \"countryCode\":\"+91\"\r\n\r\n    \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/user/userCreate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"userCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "passwordChange",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2M2U1NTMyN2U3OGEyYzZkODVhNjciLCJpYXQiOjE3NTM2ODQ2NjAsImV4cCI6MTc1Mzc3MTA2MH0.K2ZbhhBORIvWq1vuouVxQw81E4zWNG2PrZy0F8Iic5g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"satyamrai312@gmail.com\",\r\n    \"password\":\"12345\",\r\n    \"confirmNewPassword\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/user/passwordChange",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"passwordChange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reSetPassword",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2NDdjNzMyN2U3OGEyYzZkODVhN2YiLCJpYXQiOjE3NTM4NTYzNzYsImV4cCI6MTc1Mzk0Mjc3Nn0.r55Wk5awpFygtkoIZr5sPvY7uDvzzGOslbkYEYXUMkk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"oldPassword\":\"12345\",\r\n  \"newPassword\":\"123456\",\r\n  \"confirmNewPassword\":\"123456\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/user/reSetPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"reSetPassword"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "subCategory",
+			"item": [
+				{
+					"name": "addSubcategory",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgzMjNjZjUwOTVkMDU2MzdiMDM2NmEiLCJpYXQiOjE3NTM0NjQ3MTAsImV4cCI6MTc1MzU1MTExMH0.DgtcbLGkWctZckH_EUdj0XIRH8VGpPl_d0kObAG7ed0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"businessCategoryId\":\"68863b893fd96f3b8e03cdc1\",\r\n    \"vendorsId\":\"68863e88327e78a2c6d85a75\",\r\n    \"subCategoryName\":\"Men's Wear\",\r\n    \"subCategoryDescription\":\"very good\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/subCategory/addSubcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"subCategory",
+								"addSubcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllSubCategory?page=1&limit=1&businessCategoryName=Clothing",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgzMjNjZjUwOTVkMDU2MzdiMDM2NmEiLCJpYXQiOjE3NTM0NjQ3MTAsImV4cCI6MTc1MzU1MTExMH0.DgtcbLGkWctZckH_EUdj0XIRH8VGpPl_d0kObAG7ed0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/subCategory/getAllSubCategory?page=1&limit=1&businessCategoryName=Clothing",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"subCategory",
+								"getAllSubCategory"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								},
+								{
+									"key": "businessCategoryName",
+									"value": "Clothing"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSubCategoriesById/688665f4fdaa9d787f90434c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgzMjNjZjUwOTVkMDU2MzdiMDM2NmEiLCJpYXQiOjE3NTM0NjQ3MTAsImV4cCI6MTc1MzU1MTExMH0.DgtcbLGkWctZckH_EUdj0XIRH8VGpPl_d0kObAG7ed0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/subCategory/getSubCategoriesById/688665f4fdaa9d787f90434c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"subCategory",
+								"getSubCategoriesById",
+								"688665f4fdaa9d787f90434c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "addProduct",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2M2U1NTMyN2U3OGEyYzZkODVhNjciLCJpYXQiOjE3NTM2ODQ2NjAsImV4cCI6MTc1Mzc3MTA2MH0.K2ZbhhBORIvWq1vuouVxQw81E4zWNG2PrZy0F8Iic5g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subcategoriesId",
+									"value": "68866673fdaa9d787f904350",
+									"type": "text"
+								},
+								{
+									"key": "productName",
+									"value": "Shirts",
+									"type": "text"
+								},
+								{
+									"key": "productDescription",
+									"value": "very good",
+									"type": "text"
+								},
+								{
+									"key": "productPrice",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "productOriginalPrice",
+									"value": "1200",
+									"type": "text"
+								},
+								{
+									"key": "productQuantity",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "productImage",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/product/addProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"addProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2M2U1NTMyN2U3OGEyYzZkODVhNjciLCJpYXQiOjE3NTM2ODQ2NjAsImV4cCI6MTc1Mzc3MTA2MH0.K2ZbhhBORIvWq1vuouVxQw81E4zWNG2PrZy0F8Iic5g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subcategoriesId",
+									"value": "68866673fdaa9d787f904350",
+									"type": "text"
+								},
+								{
+									"key": "productName",
+									"value": "Shirts",
+									"type": "text"
+								},
+								{
+									"key": "productDescription",
+									"value": "very good",
+									"type": "text"
+								},
+								{
+									"key": "productPrice",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "productOriginalPrice",
+									"value": "1200",
+									"type": "text"
+								},
+								{
+									"key": "productQuantity",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "productImage",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/product/getProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"getProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProductById/68871fbc02aee4520af67111",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2M2U1NTMyN2U3OGEyYzZkODVhNjciLCJpYXQiOjE3NTM2ODQ2NjAsImV4cCI6MTc1Mzc3MTA2MH0.K2ZbhhBORIvWq1vuouVxQw81E4zWNG2PrZy0F8Iic5g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subcategoriesId",
+									"value": "68866673fdaa9d787f904350",
+									"type": "text"
+								},
+								{
+									"key": "productName",
+									"value": "Shirts",
+									"type": "text"
+								},
+								{
+									"key": "productDescription",
+									"value": "very good",
+									"type": "text"
+								},
+								{
+									"key": "productPrice",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "productOriginalPrice",
+									"value": "1200",
+									"type": "text"
+								},
+								{
+									"key": "productQuantity",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "productImage",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/product/getProductById/68871fbc02aee4520af67111",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"getProductById",
+								"68871fbc02aee4520af67111"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "createOrder",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2M2U1NTMyN2U3OGEyYzZkODVhNjciLCJpYXQiOjE3NTM2ODQ2NjAsImV4cCI6MTc1Mzc3MTA2MH0.K2ZbhhBORIvWq1vuouVxQw81E4zWNG2PrZy0F8Iic5g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"688647c7327e78a2c6d85a7f\",\r\n     \"products\": [\r\n    {\r\n      \"productId\": \"68871fbc02aee4520af67111\",\r\n      \"quantity\": 2,\r\n      \"TotalMRP\": 1500,\r\n      \"finalPrice\": 1000\r\n    }\r\n   \r\n  ],\r\n\r\n  \"paymentMethod\":\"CASH_ON_DELIVERY\",\r\n   \"shippingAddress\": {\r\n      \"addressLine1\": \"123 Main Street\",\r\n      \"city\": \"Azamgarh\",\r\n      \"state\": \"Uttar Pradesh\",\r\n      \"zipCode\": \"276001\",\r\n      \"country\": \"India\"\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/order/createOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"order",
+								"createOrder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "wishList",
+			"item": [
+				{
+					"name": "addToWishList",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2NDdjNzMyN2U3OGEyYzZkODVhN2YiLCJpYXQiOjE3NTM3ODEyMDgsImV4cCI6MTc1Mzg2NzYwOH0.6tL0UzbmR_-Ke2cWursqLlcTFM7_ZmZHoEFsWiEwm98",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":\"68871fbc02aee4520af67111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/wishList/addToWishList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"wishList",
+								"addToWishList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeWishlist",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2NDdjNzMyN2U3OGEyYzZkODVhN2YiLCJpYXQiOjE3NTM3ODEyMDgsImV4cCI6MTc1Mzg2NzYwOH0.6tL0UzbmR_-Ke2cWursqLlcTFM7_ZmZHoEFsWiEwm98",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":\"68871fbc02aee4520af67111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/wishList/removeWishlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"wishList",
+								"removeWishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getWishlistByUserId/688647c7327e78a2c6d85a7f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2NDdjNzMyN2U3OGEyYzZkODVhN2YiLCJpYXQiOjE3NTM3ODEyMDgsImV4cCI6MTc1Mzg2NzYwOH0.6tL0UzbmR_-Ke2cWursqLlcTFM7_ZmZHoEFsWiEwm98",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/wishList/getWishlistByUserId/688647c7327e78a2c6d85a7f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"wishList",
+								"getWishlistByUserId",
+								"688647c7327e78a2c6d85a7f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "carts",
+			"item": [
+				{
+					"name": "userAddToCart",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODg2NDdjNzMyN2U3OGEyYzZkODVhN2YiLCJpYXQiOjE3NTM3ODEyMDgsImV4cCI6MTc1Mzg2NzYwOH0.6tL0UzbmR_-Ke2cWursqLlcTFM7_ZmZHoEFsWiEwm98",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":\"68871fbc02aee4520af67111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8800/api/v1/cart/userAddToCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"userAddToCart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

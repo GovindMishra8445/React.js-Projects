@@ -1,0 +1,56 @@
+.adminCalendarContainer {
+  overflow-x: auto;
+  color: black;
+}
+
+.adminCalendarContainer .calendarContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adminCalendarContainer .sidebar {
+  flex: 1 1 20%;
+  padding: 15px;
+  border-radius: 4px;
+  background: none;
+}
+
+.adminCalendarContainer .sidebar h5 {
+  margin-bottom: 10px;
+}
+
+.adminCalendarContainer .calendar {
+  flex: 1 1 100%;
+}
+
+.adminCalendarContainer .eventDate:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+.adminCalendarContainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.adminCalendarContainer .eventItem {
+  background-color: #3498db;
+  margin: 10px 0;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 12px;
+}
+.adminCalendarContainer .eventItem div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.adminCalendarContainer .eventTitle {
+  font-weight: bold;
+}
+
+.adminCalendarContainer.event-Date {
+  font-size: 0.8rem;
+}

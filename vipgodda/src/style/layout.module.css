@@ -1,0 +1,870 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.courseDropDownCont {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 5px;
+  width: auto;
+  margin-top: -5px;
+}
+
+.courseDropDownCont li {
+  margin-bottom: 5px;
+}
+
+.courseDropDownCont li:last-child {
+  margin-bottom: 0;
+}
+
+.courseLinkStyle {
+  text-decoration: none;
+  color: #2a2a72;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.courseLinkStyle:hover {
+  color: #ff3366;
+  transform: scale(0.9);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.courseDropDownCont {
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.customMenuTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customMenuTable td {
+  border: 1px solid #ddd;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 550;
+  text-align: center;
+  background-color: #f5f5f5;
+  white-space: nowrap;
+}
+
+.customMenuTable td[rowSpan] {
+  vertical-align: middle;
+  padding: 0;
+}
+
+.customMenuTable td:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.customMenuTable td {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #2a2a72;
+  color: white;
+  padding: 20px 0;
+  width: 100vw;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerColumn {
+  flex: 1;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+.footerColumn h3 {
+  margin-bottom: 10px;
+}
+
+.footerColumn a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footerLowerContainer {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: 4rem;
+}
+
+.footerLowerColumn {
+  padding: 0 20px;
+}
+
+.footerLowerColumn div {
+  font-family: DM Serif Display;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.footerLowerColumn > a {
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+  color: white;
+  margin-top: 0.7rem;
+}
+
+/* about page */
+
+.welcomeAboutContainer {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 16px; */
+  /* margin-left: 5vw; */
+  margin: auto;
+  /* margin-bottom: 5%;
+  margin-top: 5vh; */
+}
+
+.welcomeImageCont {
+  width: 50%;
+  height: 100%;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.welcomeImageCont img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.welcomAboutCollegeCont {
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+}
+
+.welcomAboutCollegeCont p {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 40px;
+}
+
+.welcomeHeadingCont {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.welcomeHeadingCont span {
+  font-size: 1.8rem;
+  padding: 5px;
+  font-family: serif;
+  font-weight: 700;
+  color: #2a2a72;
+}
+
+/* course cont style */
+.allCoursesCont {
+  width: 70vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+  gap: 20px;
+}
+
+.courseCont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.courseCont h2 {
+  color: #193a8a;
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.courseRow {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.courseTable {
+  width: 100%;
+  height: 100%;
+}
+
+.listOfCourseCont {
+  border: 2px solid gray;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+.listOfCourseCont h1 {
+  color: #193a8a;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  border-bottom: 2px solid gray;
+}
+
+/* Gallery style */
+.galleryCont {
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 2%;
+}
+
+.galleryCardCont {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 3px;
+}
+
+.galleryCardCont img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Faculty page style */
+
+.facultyCont {
+  width: 90vw;
+  height: 100%;
+  margin-left: 5vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+.innerFacultyCont {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 3px;
+}
+
+.innerFacultyCont img {
+  width: 100%;
+  height: 90%;
+  object-fit: fill;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px 10px 0 0;
+}
+
+.facultyCardCont {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.facultyCardCont span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.facultyPageIcon {
+  display: flex;
+  justify-content: center;
+  color: #193a8a;
+}
+
+.courseDropDownCont {
+  width: 25vw;
+  height: auto;
+  z-index: 999;
+  border-radius: 5px;
+  position: absolute;
+  right: 25%;
+  top: 25%;
+  list-style: none;
+}
+
+.courseDropDownCont li {
+  padding: 15px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.courseLinkStyle {
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  /* footer */
+
+  .footer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerContainer {
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 2px solid gray;
+  }
+
+  .footerColumn {
+    margin: 0;
+  }
+
+  .footerColumn h3 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid gray;
+  }
+
+  .footerLowerContainer {
+    width: 90%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .footerLowerColumn {
+    padding: 15px;
+  }
+
+  /* about page style */
+  .welcomeAboutContainer {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10%;
+  }
+
+  .welcomeImageCont {
+    width: 90%;
+    height: 50%;
+  }
+
+  .welcomAboutCollegeCont {
+    width: 90%;
+    font-size: 2.5rem;
+  }
+
+  .welcomeHeadingCont {
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .welcomeHeadingCont span {
+    font-size: 1.2rem;
+  }
+
+  /* courses style */
+
+  .listOfCourseCont {
+    width: 100vw;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .allCoursesCont {
+    width: 100%;
+    margin: 0;
+  }
+
+  .courseCont {
+    width: 100%;
+    margin: 0;
+  }
+
+  .courseTable {
+    width: 100%;
+  }
+
+  /* Faculty style */
+  .facultyCont {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0;
+    gap: 5vh;
+    margin-top: 5%;
+  }
+
+  .innerFacultyCont {
+    width: 70%;
+    height: 48vh;
+  }
+
+  .innerFacultyCont img {
+    height: 80%;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .facultyCardCont {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+  }
+
+  .facultyCardCont span {
+    height: auto;
+    font-size: 1.7rem;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  .galleryCont {
+    width: 100vw;
+    height: auto;
+    gap: 50px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .galleryCardCont {
+    width: 70%;
+  }
+
+  .galleryHeading {
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  /* footer */
+
+  .footer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerContainer {
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 2px solid gray;
+  }
+
+  .footerColumn {
+    margin: 0;
+  }
+
+  .footerColumn h3 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid gray;
+  }
+
+  .footerLowerContainer {
+    width: 90%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footerLowerColumn {
+    padding: 15px;
+    font-size: 1.3rem;
+  }
+
+  /* about page style */
+  .welcomeAboutContainer {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10%;
+  }
+
+  .welcomeImageCont {
+    width: 60%;
+    height: 50%;
+  }
+
+  .welcomAboutCollegeCont {
+    width: 60%;
+    font-size: 3.5rem;
+  }
+
+  .welcomeHeadingCont {
+    margin-bottom: 5%;
+  }
+
+  /* courses style */
+
+  .listOfCourseCont {
+    width: 100vw;
+    margin-top: 10%;
+  }
+
+  .allCoursesCont {
+    width: 100%;
+  }
+
+  /* Faculty style */
+  .facultyCont {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0;
+    gap: 5vh;
+    margin-top: 5%;
+  }
+
+  .innerFacultyCont {
+    width: 25%;
+    height: 50vh;
+  }
+
+  .innerFacultyCont img {
+    height: 85%;
+  }
+
+  .facultyCardCont {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+  }
+
+  .facultyCardCont span {
+    height: auto;
+    font-size: 1.7rem;
+  }
+
+  .galleryCont {
+    width: 100vw;
+    height: auto;
+    gap: 50px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .galleryCardCont {
+    width: 45%;
+  }
+
+  .galleryHeading {
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  /* footer */
+
+  .footer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerContainer {
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 2px solid gray;
+  }
+
+  .footerColumn {
+    margin: 0;
+  }
+
+  .footerColumn h3 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid gray;
+  }
+
+  .footerLowerContainer {
+    width: 90%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footerLowerColumn {
+    padding: 15px;
+    font-size: 1.3rem;
+  }
+
+  /* about page style */
+  .welcomeAboutContainer {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 5%;
+  }
+
+  .welcomeImageCont {
+    width: 70%;
+    height: 50%;
+  }
+
+  .welcomAboutCollegeCont {
+    width: 70%;
+    font-size: 3.5rem;
+  }
+
+  .welcomeHeadingCont {
+    margin-bottom: 5%;
+  }
+
+  /* courses style */
+
+  .listOfCourseCont {
+    width: auto;
+    margin-top: 10%;
+  }
+
+  .allCoursesCont {
+    width: 90%;
+  }
+
+  /* Faculty style */
+  .facultyCont {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0;
+    gap: 5vh;
+    margin-top: 5%;
+  }
+
+  .innerFacultyCont {
+    width: 25%;
+    height: 50vh;
+  }
+
+  .facultyCardCont {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+  }
+
+  .innerFacultyCont img {
+    height: 80%;
+  }
+
+  .facultyCardCont span {
+    height: auto;
+    font-size: 1.7rem;
+  }
+
+  .galleryCont {
+    width: 100vw;
+    height: auto;
+    gap: 25px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .galleryCardCont {
+    width: 30%;
+  }
+
+  .galleryHeading {
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .facultyCont {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0;
+    gap: 5vh;
+    margin-top: 5%;
+  }
+
+  .innerFacultyCont {
+    width: 25%;
+    height: 50vh;
+  }
+
+  .facultyCardCont {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+  }
+
+  .innerFacultyCont img {
+    height: 90%;
+  }
+
+  .facultyCardCont span {
+    height: auto;
+    font-size: 1.7rem;
+  }
+
+  /* footer */
+
+  .footer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .footerContainer {
+    width: 80%;
+    height: 80%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 2px solid gray;
+  }
+
+  .footerColumn {
+    margin: 0;
+  }
+
+  .footerColumn h3 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid gray;
+  }
+
+  .footerLowerContainer {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footerLowerColumn {
+    padding: 15px;
+    font-size: 1.3rem;
+  }
+}

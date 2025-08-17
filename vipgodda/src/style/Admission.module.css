@@ -1,0 +1,145 @@
+/* AdmissionForm.css */
+
+.admissionFormSection {
+  /* background-color: #27292a; */
+  /* margin-top: 50px; */
+  padding: 40px;
+}
+
+.admissionForm {
+  text-align: center;
+  padding: 15px;
+  background-color: #161616;
+  border-radius: 20px;
+  /* box-shadow: 0px 10px 20px rgb(244, 201, 83); */
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.admissionForm h2 {
+  margin-bottom: 30px;
+  color: rgb(244, 201, 83);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.gridContainerThree {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gridItem {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2b2b2b;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  background-color: #3b3b3b;
+}
+
+.toast-success,
+.toast-error {
+  width: auto;
+  max-width: none;
+}
+
+.toastContainer {
+  right: auto;
+  left: 0;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.toast-error {
+  background-color: #f44336;
+}
+
+.toast-body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toast-close-button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .admission-form {
+    width: 90%;
+    max-width: none;
+    padding: 30px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  button {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .admission-form {
+    padding: 20px;
+  }
+
+  .admission-form h2 {
+    font-size: 24px;
+  }
+}

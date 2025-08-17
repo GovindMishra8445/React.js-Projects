@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  scrollbar-width: thin;
+}
+
+.font-toto{
+font-family: 'famosa';
+src: url('/font/famosa/Famosa-BlackDemo.otf') format('truetype');
+font-weight: normal;
+font-style:normal;
+
+}
+.scroll{
+  scrollbar-width: none;
+}
+.dash.active{
+  background-color: #0284c7;
+  color: white;
+}
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #8B0000; /* fallback in case Tailwind class fails */
+}

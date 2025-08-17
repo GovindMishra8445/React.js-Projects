@@ -1,0 +1,230 @@
+/* TeacherAssignmentPage.jsx */
+.adminAssignmentContainer {
+  padding: 20px;
+}
+
+/* Filter Section */
+.adminAssignmentContainer .filter-section {
+  /* margin-bottom: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.filter-section > div {
+  display: flex;
+}
+
+.adminAssignmentContainer .filter-label {
+  color: black;
+  margin-top: 10px;
+}
+
+.adminAssignmentContainer .searchInput {
+  /* width: 30%; */
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .adminAssignmentContainer .filter-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filter-section div {
+    flex-direction: column;
+  }
+
+  .adminAssignmentContainer .filter-section > div {
+    margin-bottom: 15px;
+    align-items: stretch;
+  }
+
+  .adminAssignmentContainer .searchInput {
+    width: 100%;
+  }
+}
+
+/* Assignment List */
+.adminAssignmentContainer .assignment-list-title {
+  margin-bottom: 10px;
+}
+
+.adminAssignmentContainer .table-container {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adminAssignmentContainer .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  color: black;
+  font-weight: 700;
+}
+
+.adminAssignmentContainer thead th {
+  background-color: #3498db;
+  /* color: white; */
+  padding: 12px;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.adminAssignmentContainer tbody tr:hover {
+  background-color: #97c1f1;
+}
+
+.adminAssignmentContainer th,
+.adminAssignmentContainer td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.adminAssignmentContainer .table-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.adminAssignmentContainer .table-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.adminAssignmentContainer tbody tr:hover {
+  box-shadow: 0 0 10px rgba(243, 240, 240, 0.905);
+  transition: box-shadow 0.3s ease;
+}
+
+.adminAssignmentContainer .showButton {
+  background-color: #283ba7;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.showSubmissionDetailsModal .modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.showSubmissionDetailsModal .modalContainer {
+  max-width: 500px;
+  width: 90%;
+  padding: 1.5rem;
+  color: #3b3b3b;
+  /* border: 1px solid red; */
+  border-radius: 0.75rem;
+  background-color: #09203e;
+  backdrop-filter: blur(2px);
+  background-clip: padding-box;
+  /* box-shadow: 0 4px 6px #09203e; */
+}
+.showSubmissionDetailsModal .formHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+.showSubmissionDetailsModal .formHeader h2 {
+  color: white;
+  font-size: 16px;
+}
+.showSubmissionDetailsModal .formHeader button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.showSubmissionDetailsModal .tableContainer {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.showSubmissionDetailsModal .tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  color: white;
+  font-weight: 700;
+}
+
+.showSubmissionDetailsModal thead th {
+  background-color: #3498db;
+  /* color: white; */
+  padding: 12px;
+  font-weight: bolder;
+}
+
+.showSubmissionDetailsModal tbody tr:hover {
+  background-color: #97c1f1;
+  color: black;
+}
+
+.showSubmissionDetailsModal th,
+.showSubmissionDetailsModal td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.showSubmissionDetailsModal .tableContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.showSubmissionDetailsModal .tableContainer::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.showSubmissionDetailsModal tbody tr:hover {
+  box-shadow: 0 0 10px rgba(243, 240, 240, 0.905);
+  transition: box-shadow 0.3s ease;
+}
+
+.adminAssignmentContainer .pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.adminAssignmentContainer .pagination button {
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 3%;
+}
+
+.adminAssignmentContainer .pagination button:hover {
+  background-color: #3498db;
+}
+
+.adminStudentContainer .pagination span {
+  margin: 0 10px;
+}

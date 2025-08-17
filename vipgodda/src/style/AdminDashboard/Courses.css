@@ -1,0 +1,265 @@
+.adminCoursesContainer {
+}
+
+.adminCoursesContainer .coursesHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.adminCoursesContainer .headerTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.adminCoursesContainer .addCourseButton {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.adminCoursesContainer .addCourseButton:hover {
+  background-color: #3498db;
+}
+
+.adminCoursesContainer .editButton {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 50%;
+}
+
+.adminCoursesContainer .deleteButton {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 0.2rem;
+  width: 50%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+.adminCoursesContainer .editButton:hover,
+.adminCoursesContainer .deleteButton:hover {
+  background-color: #218838;
+}
+
+.adminCoursesContainer .tableContainer {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.adminCoursesContainer .tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.adminCoursesContainer thead th {
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  font-weight: bolder;
+}
+
+.adminCoursesContainer .tableContainer tr:hover {
+  background-color: none;
+}
+
+.adminCoursesContainer .tableContainer th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.adminCoursesContainer .tableContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.adminCoursesContainer .tableContainer::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.adminCoursesContainer tbody tr:hover {
+  box-shadow: 0 0 10px rgba(243, 240, 240, 0.905);
+  transition: box-shadow 0.3s ease;
+}
+
+.adminCoursesContainer .spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminCoursesContainer .loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .adminCoursesContainer .coursesHeader {
+    flex-direction: column;
+  }
+  .adminCoursesContainer .deleteButton,
+  .adminCoursesContainer .editButton {
+    width: 100%;
+  }
+}
+
+/* Form */
+.addCourseModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(41, 43, 47, 0.1);
+  z-index: 10;
+  backdrop-filter: blur(0.1rem);
+}
+
+.addCourseModal .modalContent {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem #09203e;
+  background-color: #09203e;
+}
+
+.addCourseModal .modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addCourseModal .modalTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.addCourseModal .modalCloseButton {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.addCourseModal .closeButton {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.addCourseModal .closeButton:hover {
+  color: red;
+}
+
+.addCourseModal .modalForm {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.addCourseModal .formGroup {
+  margin-bottom: 1rem;
+}
+
+.addCourseModal .inputField {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #000;
+}
+
+.addCourseModal .submitButton {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.75rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.addCourseModal .submitButton:hover {
+  background-color: rgb(0, 191, 255);
+}
+.adminCoursesContainer .pagination {
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  /* width: 3%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.adminCoursesContainer .pagination button {
+  border: none;
+}
+
+.adminCoursesContainer .pagination button:hover {
+  background-color: #3498db;
+}
+
+.adminCoursesContainer .pagination span {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .addCourseModal .modalContent {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .addCourseModal .modalHeader {
+    align-items: center;
+  }
+  .addCourseModal .modalTitle {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .addCourseModal .inputField {
+    font-size: 0.9rem;
+  }
+  .addCourseModal .submitButton {
+    width: 100%;
+  }
+  .addCourseModal .modalForm {
+    margin-top: 0rem;
+  }
+}
