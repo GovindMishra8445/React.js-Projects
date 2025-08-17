@@ -96,16 +96,16 @@ import { Code, PenTool, Server } from "lucide-react";
 import { motion } from "framer-motion";
 import SkillSlider from "./SkillSlider";
 
-import htmlIcon from "../assets/skill_icon/html.png";
-import cssIcon from "../../src/assets/skill_icon/css.png";
-import jsIcon from "../../src/assets/skill_icon/js.png";
-import reactIcon from "../../src/assets/skill_icon/reactjs.png";
-import reduxIcon from "../../src/assets/skill_icon/reactjs.png";
-import tailwindIcon from "../../src/assets/skill_icon/tailwind.png"; 
-import nodejsIcon from "../../src/assets/skill_icon/nodejs.png"; 
-import figmaIcon from "../../src/assets/skill_icon/figma.png"; 
-import gitIcon from "../../src/assets/skill_icon/git.png"; 
-import visualIcon from "../../src/assets/skill_icon/visual-studio-code.png";
+import htmlIcon from "../../public/assets/skill_icon/html.png";
+import cssIcon from "../../public/assets/skill_icon/css.png";
+import jsIcon from "../../public/assets/skill_icon/js.png";
+import reactIcon from "../../public/assets/skill_icon/reactjs.png";
+import reduxIcon from "../../public/assets/skill_icon/reactjs.png";
+import tailwindIcon from "../../public/assets/skill_icon/tailwind.png"; 
+import nodejsIcon from "../../public/assets/skill_icon/nodejs.png"; 
+import figmaIcon from "../../public/assets/skill_icon/figma.png"; 
+import gitIcon from "../../public/assets/skill_icon/git.png"; 
+import visualIcon from "../../public/assets/skill_icon/visual-studio-code.png";
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState("frontend");

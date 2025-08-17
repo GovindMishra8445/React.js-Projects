@@ -2,7 +2,7 @@
 import React from 'react';
 import { Download } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
-import aboutImage from '../assets/images/govindPhoto.jpg';
+import aboutImage from '../../public/assets/images/govindPhoto.jpg';
 
 const About = () => {
   return (

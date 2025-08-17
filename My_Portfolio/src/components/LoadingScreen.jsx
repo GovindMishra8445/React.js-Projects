@@ -131,7 +131,7 @@
 // components/LoadingScreen.jsx
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Logo from '../assets/images/mainLogo.png'; // Update to your logo file
+import Logo from '../../public/assets/images/mainLogo.png'; // Update to your logo file
 
 const containerVariants = {
   hidden: { opacity: 0 },

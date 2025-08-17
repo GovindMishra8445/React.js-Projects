@@ -116,7 +116,7 @@ import { NavLink, Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext'; 
-import Logo from '../assets/images/mainLogo.png';
+import Logo from '../../public/assets/images/mainLogo.png';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../firebase'; // Import auth
 

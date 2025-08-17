@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
 import { ArrowDown, X, Download, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import govindPhoto from "../assets/images/govind1.jpg"; // fallback image
-import govindPhotoMobile from "../assets/images/govind2removebg.png"; // for small screens
-import govindPhotoDesktop from "../assets/images/govind1removebg.png"; // for md and larger screens
+import govindPhoto from "../../public/assets/images/govind1.jpg"; // fallback image
+import govindPhotoMobile from "../../public/assets/images/govind2removebg.png"; // for small screens
+import govindPhotoDesktop from "../../public/assets/images/govind1removebg.png"; // for md and larger screens
 
 const Hero = () => {
   const el = useRef(null);

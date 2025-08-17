@@ -3,17 +3,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Import your skill icons – update these paths with your actual asset locations
-import htmlIcon from '../assets/SkillsImage/html.png';
-import cssIcon from '../assets/SkillsImage/css.png';
-import jsIcon from '../assets/SkillsImage/javascript.png';
-import reactIcon from '../assets/SkillsImage/reactJs.png';
-import reactNativeIcon from '../assets/SkillsImage/reactNative.png';
-import tailwindIcon from '../assets/SkillsImage/icons8-tailwindcss.png';
-import nodeIcon from '../assets/SkillsImage/nodejs.png';
-import nextIcon from '../assets/SkillsImage/nuxt-js.png';
-import githubIcon from '../assets/SkillsImage/github.png';
-import Figma from '../assets/SkillsImage/figma.png';
-import Canva from '../assets/SkillsImage/canva.png';
+import htmlIcon from '../../public/assets/SkillsImage/html.png';
+import cssIcon from '../../public/assets/SkillsImage/css.png';
+import jsIcon from '../../public/assets/SkillsImage/javascript.png';
+import reactIcon from '../../public/assets/SkillsImage/reactJs.png';
+import reactNativeIcon from '../../public/assets/SkillsImage/reactNative.png';
+import tailwindIcon from '../../public/assets/SkillsImage/icons8-tailwindcss.png';
+import nodeIcon from '../../public/assets/SkillsImage/nodejs.png';
+import nextIcon from '../../public/assets/SkillsImage/nuxt-js.png';
+import githubIcon from '../../public/assets/SkillsImage/github.png';
+import Figma from '../../public/assets/SkillsImage/figma.png';
+import Canva from '../../public/assets/SkillsImage/canva.png';
 
 const skills = [
   { name: 'HTML', icon: htmlIcon },
