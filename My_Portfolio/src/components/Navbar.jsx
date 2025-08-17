@@ -116,7 +116,7 @@ import { NavLink, Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext'; 
-import Logo from '../../public/assets/images/mainLogo.png';
+// import Logo from '../../public/assets/images/mainLogo.png';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../firebase'; // Import auth
 
@@ -158,7 +158,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <NavLink to="/" className="flex items-center space-x-2">
-          <img src={Logo} alt="Logo" className="w-12 h-12 rounded-md" />
+          <img src="/mainLogo.png" alt="Logo" className="w-12 h-12 rounded-md" />
           {/* <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">Portfolio</span> */}
         </NavLink>
 

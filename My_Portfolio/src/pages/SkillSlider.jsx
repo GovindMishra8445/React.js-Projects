@@ -3,31 +3,33 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Import your skill icons – update these paths with your actual asset locations
-import htmlIcon from '../../public/assets/SkillsImage/html.png';
-import cssIcon from '../../public/assets/SkillsImage/css.png';
-import jsIcon from '../../public/assets/SkillsImage/javascript.png';
-import reactIcon from '../../public/assets/SkillsImage/reactJs.png';
-import reactNativeIcon from '../../public/assets/SkillsImage/reactNative.png';
-import tailwindIcon from '../../public/assets/SkillsImage/icons8-tailwindcss.png';
-import nodeIcon from '../../public/assets/SkillsImage/nodejs.png';
-import nextIcon from '../../public/assets/SkillsImage/nuxt-js.png';
-import githubIcon from '../../public/assets/SkillsImage/github.png';
-import Figma from '../../public/assets/SkillsImage/figma.png';
-import Canva from '../../public/assets/SkillsImage/canva.png';
-
 const skills = [
-  { name: 'HTML', icon: htmlIcon },
-  { name: 'CSS', icon: cssIcon },
-  { name: 'JavaScript', icon: jsIcon },
-  { name: 'React', icon: reactIcon },
-  { name: 'React Native', icon: reactNativeIcon },
-  { name: 'Tailwind', icon: tailwindIcon },
-  { name: 'Node.js', icon: nodeIcon },
-  { name: 'Next.js', icon: nextIcon },
-  { name: 'GitHub', icon: githubIcon },
-  { name: 'Figma', icon: Figma },
-  { name: 'Canva', icon: Canva },
+  { name: 'HTML', icon: '/SkillsImage/html.png' },
+  { name: 'CSS', icon: '/SkillsImage/css.png' },
+  { name: 'JavaScript', icon: '/SkillsImage/javascript.png' },
+  { name: 'React', icon: '/SkillsImage/reactJs.png' },
+  { name: 'React Native', icon: '/SkillsImage/reactNative.png' },
+  { name: 'Tailwind', icon: '/SkillsImage/icons8-tailwindcss.png' },
+  { name: 'Node.js', icon: '/SkillsImage/nodejs.png' },
+  { name: 'Next.js', icon: '/SkillsImage/nuxt-js.png' },
+  { name: 'GitHub', icon: '/SkillsImage/github.png' },
+  { name: 'Figma', icon: '/SkillsImage/figma.png' },
+  { name: 'Canva', icon: '/SkillsImage/canva.png' },
 ];
+
+// const skills = [
+//   { name: 'HTML', icon: htmlIcon },
+//   { name: 'CSS', icon: cssIcon },
+//   { name: 'JavaScript', icon: jsIcon },
+//   { name: 'React', icon: reactIcon },
+//   { name: 'React Native', icon: reactNativeIcon },
+//   { name: 'Tailwind', icon: tailwindIcon },
+//   { name: 'Node.js', icon: nodeIcon },
+//   { name: 'Next.js', icon: nextIcon },
+//   { name: 'GitHub', icon: githubIcon },
+//   { name: 'Figma', icon: Figma },
+//   { name: 'Canva', icon: Canva },
+// ];
 
 // Separate skills into two groups
 const topSkills = skills.slice(0, 5);

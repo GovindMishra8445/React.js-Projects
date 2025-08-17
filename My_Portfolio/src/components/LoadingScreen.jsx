@@ -131,7 +131,7 @@
 // components/LoadingScreen.jsx
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Logo from '../../public/assets/images/mainLogo.png'; // Update to your logo file
+// import Logo from '../../public/assets/images/mainLogo.png'; // Update to your logo file
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -196,7 +196,7 @@ const LoadingScreen = ({ onComplete }) => {
           {/* Centered Logo */}
           <div className="absolute inset-0 flex items-center justify-center">
             <img 
-              src={Logo} 
+             src="/mainLogo.png" 
               alt="Logo" 
               className="w-32 h-32 object-contain rounded-full" 
             />
