@@ -2,9 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
 import { ArrowDown, X, Download, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import govindPhoto from "../../public/assets/images/govind1.jpg"; // fallback image
-import govindPhotoMobile from "../../public/assets/images/govind2removebg.png"; // for small screens
-import govindPhotoDesktop from "../../public/assets/images/govind1removebg.png"; // for md and larger screens
 
 const Hero = () => {
   const el = useRef(null);
@@ -141,14 +138,14 @@ I am committed to leveraging my skills to make a lasting impact and drive meanin
                 <picture>
                   <source
                     media="(max-width: 639px)"
-                    srcSet={govindPhotoMobile}
+                    srcSet="/assets/images/govind2removebg.png"
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcSet={govindPhotoDesktop}
+                    srcSet="/assets/images/govind1removebg.png"
                   />
                   <img
-                    src={govindPhoto}
+                    src="/assets/images/govind1.jpg"
                     alt="Govind Mishra"
                     className="w-full h-full object-contain rounded-xl drop-shadow-lg"
                   />

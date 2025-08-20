@@ -1,12 +1,49 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { useSelector } from 'react-redux';
+// import { createSlice } from '@reduxjs/toolkit';
+// import { useSelector } from 'react-redux';
 
+// const initialState = {
+//   token: localStorage.getItem('token') || null,
+//   uid: localStorage.getItem('uid') ? JSON.parse(localStorage.getItem('uid')) : null,
+// };
+
+// export const selectuid = (state) => state?.auth?.uid
+
+// const authSlice = createSlice({
+//   name: 'auth',
+//   initialState,
+//   reducers: {
+//     loginSuccess: (state, action) => {
+//       state.token = action.payload.token;
+//       state.uid = action.payload.uid;
+//       localStorage.setItem('token', action.payload.token);
+//       localStorage.setItem('uid', JSON.stringify(action.payload.uid));
+//     },
+//     logout: (state) => {
+//       state.token = null;
+//       state.uid = null;
+//       localStorage.removeItem('token');
+//       localStorage.removeItem('uid');
+//     },
+//   },
+// });
+
+// export const { loginSuccess, logout } = authSlice.actions;
+// export default authSlice.reducer;
+
+
+
+
+
+import { createSlice } from '@reduxjs/toolkit';
+
+// Initial state with safe JSON parsing
 const initialState = {
   token: localStorage.getItem('token') || null,
-  user: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null,
+  uid: localStorage.getItem('uid') ? JSON.parse(localStorage.getItem('uid')) : null,
 };
 
-export const selectUser = (state) => state?.auth?.user
+// Selector function to safely access uid
+export const selectuid = (state) => state?.auth?.uid || null;
 
 const authSlice = createSlice({
   name: 'auth',
@@ -14,15 +51,15 @@ const authSlice = createSlice({
   reducers: {
     loginSuccess: (state, action) => {
       state.token = action.payload.token;
-      state.user = action.payload.user;
+      state.uid = action.payload.uid;
       localStorage.setItem('token', action.payload.token);
-      localStorage.setItem('user', JSON.stringify(action.payload.user));
+      localStorage.setItem('uid', JSON.stringify(action.payload.uid));
     },
     logout: (state) => {
       state.token = null;
-      state.user = null;
+      state.uid = null;
       localStorage.removeItem('token');
-      localStorage.removeItem('user');
+      localStorage.removeItem('uid');
     },
   },
 });

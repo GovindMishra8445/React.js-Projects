@@ -3,12 +3,14 @@ import TopHeader from "../../components/TopHeader";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { Heart } from "lucide-react";
+import Navbar from "../../components/Navbar";
 
 const Wishlist = () => {
   return (
     <>
       <TopHeader />
       <Header />
+      <Navbar/>
       <div>
         <div>
           <div>

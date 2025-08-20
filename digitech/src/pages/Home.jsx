@@ -18,12 +18,14 @@ import TradePartnerCTA from "../components/TradePartnerCTA";
 import FAQAccordion from "../components/FAQAccordion";
 import Footer from "../components/Footer";
 import TopHeader from "../components/TopHeader";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <>
       <TopHeader/>
       <Header />
+      <Navbar/>
       <HeroSlider />
       <ShopByCategory />
       <PremiumDryFruitCollection />
